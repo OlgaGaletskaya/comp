@@ -1,0 +1,402 @@
+$grad1: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+$grad2: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    float: 24px;
+    color: #ffffff78;
+    background: black;
+}
+header{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    & a.btn{
+        min-width: 182px;
+    }
+}
+.container{
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+section:not(:first-child) {
+    margin: 200px 0;
+}
+nav{
+    width: fill;
+    max-width: 747px;
+}
+.nav-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.num{
+    color: white;
+    font-weight: 700;
+    line-height: 140%;
+}
+.btn {
+    padding: 10px 30px;
+    background: $grad2;
+    border-radius: 50px;
+    color: white;
+    width: max-content;
+    border: 0 none;
+}
+.main{
+    height: 100vh;
+    background-image: url(../images/main-screen__bgc.png);
+    
+    background-size: cover;
+    background-position: center;
+    &__inner{
+        
+        height: calc(100vh - 130px);
+        max-width: 920px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+    }
+    &__time{
+        display: flex;
+        gap: 30px;
+        &-cart{
+            background: #121212;
+            padding: 20px 30px;
+            & .num{
+                font-size: 36px;
+            }
+        }
+    }
+    &__last-line{
+        background: #121212;
+        &-inner{
+            height: 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            & .btn{
+                background: $grad1;
+                font-weight: 700;
+                min-width: 173px;
+            }
+        }
+    }
+    &__people{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 250px;
+        & div{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+    &__money{
+        width: fill;
+        & > div{
+            display: flex;
+            gap: 30px;
+        }
+        & > div:last-child{
+            justify-content: space-between;
+        }
+        & .money{
+            width: 100%;
+            height: 6px;
+            background-color: #fff;
+            &__progress{
+                width: 40%;
+                height: 100%;
+                background: $grad1;
+            }
+        }
+    }
+}
+.about{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        color: white;
+    }
+    &__img{
+        &-wrp{
+            background: $grad2;
+            padding: 30px;
+            width: 45%;
+        }
+        width: 100%;
+        background-color: black;
+        position: relative;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img{
+            position: relative;
+            bottom: -66px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        justify-content: center;
+        max-width: 636px;
+        width: 50%;
+    }
+}
+.start{
+    &__inner{
+        &>p{
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+    }
+    &__content{
+        display: flex;
+    }
+    &__item{
+        width: 25%;
+        font-size: 14px;
+        &:nth-child(2n) .start__scale div{
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+        & .num{font-size: 36px;}
+        p {margin-right: 18px;}
+    }
+    &__scale{
+        height: 100px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        & div{
+            background: $grad2;
+            height: 20%;
+            width: 100%;
+        }
+        &100{
+            height: 80% !important;
+        }
+        &75{
+            height: 60% !important;
+        }
+        &50{
+            height: 40% !important;
+        }
+    }
+}
+.advantages{
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        text-align: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 358px;
+        & h3{
+            padding: 0 20px;
+        }
+    }
+}
+.partners{
+    &__cont{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        background-color: #ffffff40;
+        margin-top: 50px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc((100% - 3px)/4);
+        background-color: black;
+        padding: 0 20px;
+    }
+}
+.program{
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        &>p{max-width: 412px; text-align: center;}
+    }
+    &__content{
+        margin-top: 80px;
+        width: 6px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: $grad2; 
+        }
+        
+        padding: 10px 0;
+    }
+    &__item{
+        position: relative;
+        left: 6px;
+        padding: 0 60px;
+        width: 364px;
+        font-size: 14px;
+        line-height: 160%;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 1px;
+            background-color: white;
+            opacity: 0.3;
+            top: 50%;
+        }
+        &:nth-child(2n+1){
+            left: -364px;
+            text-align: right;
+        }
+        &:nth-child(2n)::after{
+            left: 0;
+        }
+    }
+    &__txt{
+        color: white;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 160%;
+    }
+}
+.teachers{
+    &__content{
+        margin-top: 113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 416px;
+        & .btn{
+            margin-top: 30px;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+        }
+    }
+    &__name{
+                
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        color: white;
+    }
+}
+
+h1{
+    font-size: 64px;   
+}
+h2, h3{
+    font-weight: 700;
+font-size: 48px;
+line-height: 140%;
+color: white;
+}
+h3{
+    font-weight: 500;
+    font-size: 24px;
+}
+.section{
+    &__title{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+footer{
+    max-width: 547px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    & h2{margin-bottom: 30px;}
+    & form{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        position: relative;
+        width: 90%;
+        & input[type="email"]{
+            max-width: 492px;
+            width: 100%;
+            height: 44px;
+            background: #ffffff33;
+            border-radius: 50px;
+            color: white;
+            border : 0 none;
+            padding: 0 30px;
+            &:focus-visible{
+                outline: none;
+            }
+        }
+        & input[type="submit"]{
+            background: $grad1;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border : 0 none;
+        }
+
+    }
+    & p{max-width: 412px;}
+}
+.footer{
+    &__soc{
+        display: flex;
+        margin-bottom: 50px;
+        gap: 30px;
+        & a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: $grad2;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@media (max-width:832px) {
+    h1{
+        font-size: 48px;
+        text-align: center;
+    }
+    h2{
+        font-size: 36px;
+        
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+        
+        text-align: center;
+    }
+    nav{display: none;}
+    .main__time-cart {
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__time-cart .num{
+        font-size: 24px;
+    }
+    .main__last-line{
+        padding: 20px 0;
+    }
+    .main__last-line-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    .about{
+        &__inner{
+            flex-direction: column;
+            gap: 70px;
+            text-align: center;
+        }
+    }
+    .advantages__items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners{
+        &__item{
+            width: calc((100% - 1px)/2);
+            
+        }
+    }
+    .program{
+        &__content{
+            width: auto;
+        }
+        &__item{
+            &:nth-child(2n+1){
+                left: 6px;
+                text-align: left;
+            }
+            padding-top: 20px;
+            padding-right: 0;
+            width: auto;
+        }
+    }
+    .program__item::after{
+        left: 0;
+    }
+    .teachers__content{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:480px){
+    h1{
+        font-size: 36px;
+    }
+    .partners{
+        &__item{
+            width: 100%;
+            
+        }
+    }
+    .main__time{
+        display: none;
+    }
+}
